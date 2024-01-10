@@ -1,0 +1,20 @@
+{
+  "name": "trpc-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stasi Vladimirov <st.ts.vladimirov@gmail.com> (https://cmacu.com)",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "cd frontend && yarn dev",
+    "dev:backend": "cd backend && yarn dev",
+    "dev": "yarn dev:frontend & yarn dev:backend"
+  }
+}

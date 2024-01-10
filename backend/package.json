@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "Stasi Vladimirov <st.ts.vladimirov@gmail.com> (https://cmacu.com)",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@trpc/server": "^10.45.0",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.22.4"
+  },
+  "scripts": {
+    "dev": "NODE_PATH=./src yarn tsx watch src/server.ts",
+    "start": "NODE_PATH=./dist node dist/server.js",
+    "build": "yarn tsc"
+  }
+}
